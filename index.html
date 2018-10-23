@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>Typing Gym</title>
+  <meta name="description" content="Practice typing like a pro. Build muscle memory by listening to keystrokes."/>
+  
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<style>
+html { 
+  background-color: #f3f3f3;
+  background: url(bg.jpg) no-repeat center top fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121626022-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121626022-1');
+</script>
+</head>
+
+<body style="padding: 200px 20px 0 0;">
+	<div style="width: 650px; margin:0 auto; text-align: right;">
+		<button id="sound" type="button"><i class="fa" aria-hidden="true" style="color: #607d8b;"></i></button>
+	</div>
+	<div style="display: block; opacity: 1; width: 685px; margin:0 auto;" id="vkeyboardhand" is="null">
+		<object id="svgObject" style="width: 685px;" type="image/svg+xml" data="keyboard-ansi.svg"></object>
+	</div>
+	<table style="margin: auto;font-size: 10px;color: #777;">
+		<tr><td>A</td><td>&nbsp;</td><td>D</td><td>&nbsp;</td><td>&nbsp;</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>C</td><td>&nbsp;</td><td>B</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<!--tr><td colspan="11">&nbsp;</td></tr-->
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>E</td>&nbsp;<td></td>&nbsp;<td></td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>F</td><td>G</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>H</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<!--tr><td colspan="11">&nbsp;</td></tr-->
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>I</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>J</td><td>K</td><td>L</td><td>&nbsp;</td></tr>
+		<!--tr><td colspan="11">&nbsp;</td></tr-->
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>O</td><td>P</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>N</td><td>M</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<!--tr><td colspan="11">&nbsp;</td></tr-->
+		<tr><td>Q</td><td>&nbsp;</td><td>&nbsp;</td><td>R</td><td>T</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td><td>S</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<!--tr><td colspan="11">&nbsp;</td></tr-->
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>U</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>V</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<!--tr><td colspan="11">&nbsp;</td></tr-->
+		<tr><td>&nbsp;</td><td>W</td><td>&nbsp;</td><td>&nbsp;</td><td>Y</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+		<tr><td>Z</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>		<td>&emsp;&emsp;|&emsp;&emsp;</td>		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+	</table>
+	<!--div style="position: absolute; bottom: 10px; left: 45%; color: #aaa;">
+		&copy; <a href="/" style="text-decoration: none; color: #aaa;">TypingGym</a>
+	</div-->
+	<script src="scripts.js"></script>
+	<audio id="audio-0" preload="auto"><source src="audio/0.mp3"></source></audio>
+	<audio id="audio-1" preload="auto"><source src="audio/1.mp3"></source></audio>
+	<audio id="audio-2" preload="auto"><source src="audio/2.mp3"></source></audio>
+	<audio id="audio-3" preload="auto"><source src="audio/3.mp3"></source></audio>
+	<audio id="audio-4" preload="auto"><source src="audio/4.mp3"></source></audio>
+	<audio id="audio-5" preload="auto"><source src="audio/5.mp3"></source></audio>
+	<audio id="audio-6" preload="auto"><source src="audio/6.mp3"></source></audio>
+	<audio id="audio-7" preload="auto"><source src="audio/7.mp3"></source></audio>
+	<audio id="audio-8" preload="auto"><source src="audio/8.mp3"></source></audio>
+	<audio id="audio-9" preload="auto"><source src="audio/9.mp3"></source></audio>
+	<audio id="audio-a" preload="auto"><source src="audio/a.mp3"></source></audio>
+	<audio id="audio-b" preload="auto"><source src="audio/b.mp3"></source></audio>
+	<audio id="audio-c" preload="auto"><source src="audio/c.mp3"></source></audio>
+	<audio id="audio-d" preload="auto"><source src="audio/d.mp3"></source></audio>
+	<audio id="audio-e" preload="auto"><source src="audio/e.mp3"></source></audio>
+	<audio id="audio-f" preload="auto"><source src="audio/f.mp3"></source></audio>
+	<audio id="audio-g" preload="auto"><source src="audio/g.mp3"></source></audio>
+	<audio id="audio-h" preload="auto"><source src="audio/h.mp3"></source></audio>
+	<audio id="audio-i" preload="auto"><source src="audio/i.mp3"></source></audio>
+	<audio id="audio-j" preload="auto"><source src="audio/j.mp3"></source></audio>
+	<audio id="audio-k" preload="auto"><source src="audio/k.mp3"></source></audio>
+	<audio id="audio-l" preload="auto"><source src="audio/l.mp3"></source></audio>
+	<audio id="audio-m" preload="auto"><source src="audio/m.mp3"></source></audio>
+	<audio id="audio-n" preload="auto"><source src="audio/n.mp3"></source></audio>
+	<audio id="audio-o" preload="auto"><source src="audio/o.mp3"></source></audio>
+	<audio id="audio-p" preload="auto"><source src="audio/p.mp3"></source></audio>
+	<audio id="audio-q" preload="auto"><source src="audio/q.mp3"></source></audio>
+	<audio id="audio-r" preload="auto"><source src="audio/r.mp3"></source></audio>
+	<audio id="audio-s" preload="auto"><source src="audio/s.mp3"></source></audio>
+	<audio id="audio-t" preload="auto"><source src="audio/t.mp3"></source></audio>
+	<audio id="audio-u" preload="auto"><source src="audio/u.mp3"></source></audio>
+	<audio id="audio-v" preload="auto"><source src="audio/v.mp3"></source></audio>
+	<audio id="audio-w" preload="auto"><source src="audio/w.mp3"></source></audio>
+	<audio id="audio-x" preload="auto"><source src="audio/x.mp3"></source></audio>
+	<audio id="audio-y" preload="auto"><source src="audio/y.mp3"></source></audio>
+	<audio id="audio-z" preload="auto"><source src="audio/z.mp3"></source></audio>
+	<div style="position: absolute; bottom: 10px; left: 10px;">
+		<a href="http://www.freepik.com" target="_blank" style="text-decoration: none; color: #777777;">Designed by Freepik</a>
+	</div>
+</body>
+</html>
